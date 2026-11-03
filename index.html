@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GLR Sanchari | Your dreams come true here</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Noto+Sans+Kannada:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6faff;--card:#fff;--ink:#0b1f4d;--mut:#51607f;--blue:#0b3a9e;--sky:#1f9bff;--sun:#ff9f1c;--line:#d9e4f5;--btn:#0b3a9e;--btnt:#fff;--chip:#e6f1ff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#07122b;--card:#0e1d40;--ink:#eaf1ff;--mut:#9fb0d3;--blue:#8db8ff;--line:#223660;--btn:#2a6df0;--chip:#16295a}}
+:root[data-theme="dark"]{--bg:#07122b;--card:#0e1d40;--ink:#eaf1ff;--mut:#9fb0d3;--blue:#8db8ff;--line:#223660;--btn:#2a6df0;--chip:#16295a}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 'Plus Jakarta Sans',system-ui,sans-serif}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--card);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:14px;height:62px}
+.top nav{margin-left:auto;display:flex;gap:16px;font-size:14px;font-weight:600}
+.top nav a{text-decoration:none;color:var(--mut)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo small{font:600 15px 'Noto Sans Kannada',sans-serif;color:var(--blue)}
+.btn{display:inline-block;border:0;border-radius:10px;background:var(--btn);color:var(--btnt);font:600 15px inherit;font-family:inherit;padding:11px 18px;cursor:pointer;text-decoration:none}
+.btn.alt{background:var(--sun);color:#2b1700}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.btn.sm{padding:7px 12px;font-size:13px}
+:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+.hero{background:linear-gradient(180deg,#1f7bff 0%,#7cc4ff 45%,#ffe0ad 78%,#ff9f1c 100%);color:#fff;position:relative;overflow:hidden;padding:64px 0 96px}
+.hero h1{font-size:clamp(34px,7vw,64px);line-height:1.05;font-weight:800;margin:0 0 14px;max-width:11em;text-shadow:0 2px 18px rgba(11,58,158,.35)}
+.hero p{max-width:30em;font-size:18px;margin:0 0 22px;color:#fff}
+.hero .kn{font:600 22px 'Noto Sans Kannada',sans-serif;margin-bottom:6px;color:#0b2a78}
+.sun{position:absolute;right:8%;bottom:-70px;width:200px;height:200px;border-radius:50%;background:#fff3c9;opacity:.85}
+.plane{position:absolute;top:36px;width:120px;animation:fly 5s ease-out both}
+@keyframes fly{from{transform:translateX(-160px);opacity:0}to{transform:translateX(0);opacity:1}}
+@media (prefers-reduced-motion:reduce){.plane{animation:none}html{scroll-behavior:auto}}
+.plane{right:6%}
+section{padding:44px 0}
+h2{font-size:28px;margin:0 0 6px}
+.sub{color:var(--mut);margin:0 0 22px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.cover{height:130px;padding:14px;display:flex;align-items:flex-end;color:#fff;font-weight:800;font-size:26px;background:linear-gradient(135deg,#0b3a9e,#1f9bff 60%,#ff9f1c)}
+.cb{padding:16px}
+.chip{display:inline-block;background:var(--chip);color:var(--blue);border-radius:99px;padding:2px 10px;font-size:12px;font-weight:600}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.price{font-size:22px;font-weight:800;color:var(--blue)}
+.bar{height:6px;border-radius:9px;background:var(--line);overflow:hidden;margin:10px 0 4px}
+.bar i{display:block;height:100%;background:var(--sun)}
+.mut{color:var(--mut);font-size:13px}
+.why{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.why div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.why b{display:block;margin-bottom:4px}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px}
+summary{font-weight:600;cursor:pointer}
+footer{background:var(--blue);color:#fff;padding:30px 0;font-size:14px}
+:root[data-theme="dark"] footer,footer{background:#0b3a9e}
+dialog{border:0;border-radius:18px;padding:0;width:min(680px,94vw);max-height:90vh;background:var(--card);color:var(--ink)}
+dialog::backdrop{background:rgba(5,15,40,.6)}
+.dp{padding:22px;overflow:auto;max-height:90vh}
+.two{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+@media (max-width:560px){.two{grid-template-columns:1fr}.top nav a.h{display:none}}
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:14px 0}
+.facts div{background:var(--chip);border-radius:10px;padding:8px 12px}
+.facts span{display:block;font-size:12px;color:var(--mut)}
+ul.t{margin:6px 0;padding-left:20px}
+label{display:block;font-size:13px;font-weight:600;margin:10px 0 4px}
+input,select,textarea{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit}
+textarea{min-height:84px}
+.admin{padding:28px 0}
+.stats{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin:16px 0}
+.stats div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
+.stats b{display:block;font-size:24px;color:var(--blue)}
+.tabs{display:flex;gap:8px;margin:10px 0}
+.tw{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:14px}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:14px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+.login{max-width:380px;margin:40px auto;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.ok{color:#0a7d3a;font-weight:600}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="logo" href="#" aria-label="GLR Sanchari home">
+<svg width="86" height="40" viewBox="0 0 86 40" aria-hidden="true"><text x="0" y="30" font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="34" fill="#0b3a9e" style="fill:var(--blue)">GLR</text><path d="M2 36C26 36 52 26 72 14" stroke="#1f9bff" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M70 8l12-4-6 10z" fill="#ff9f1c"/></svg>
+<small>ಸಂಚಾರಿ</small></a>
+<nav><a class="h" href="#tours">Tours</a><a class="h" href="#why">Why us</a><a class="h" href="#faq">FAQ</a><a href="#contact">Contact</a><a id="acc" href="#account">Sign in</a><a href="#admin">Admin</a></nav>
+</div></header>
+<main id="app"></main>
+<dialog id="dlg"></dialog>
+<script>
+var PHONE='+91 00000 00000',WA='910000000000',EMAIL='info@yourdomain.com',AUSER='admin@glr.in',APASS='glr@123';
+var mem={};
+function ld(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return mem[k]!==undefined?mem[k]:d}}
+function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){mem[k]=v}}
+var seed=[{id:'t1',title:'Shirdi Sai Baba Darshan',dest:'Shirdi',cat:'Domestic',days:'3 Days / 2 Nights',dep:'2026-12-12',ret:'2026-12-14',price:8999,seats:40,booked:12,pickup:'Bengaluru (Majestic / Kempegowda Airport)',status:'Open',
+itin:'Fly Bengaluru to Shirdi, hotel check-in, evening Aarti at the Samadhi Mandir\nKakad Aarti, darshan, visit Dwarkamai and Chavadi, Shani Shingnapur in the afternoon\nBreakfast, local shopping, transfer to airport and fly back to Bengaluru',
+inc:'Return flight tickets\n2 nights hotel stay (twin sharing)\nBreakfast and dinner\nAC cab for all transfers\nKannada-speaking tour manager',
+exc:'Lunch\nVIP darshan tickets\nPersonal expenses\nAnything not listed in inclusions'}];
+var trips=ld('glr_trips',null);if(!trips){trips=seed;sv('glr_trips',trips)}
+var enq=ld('glr_enq',[]),tab='trips';
+var $=function(s){return document.querySelector(s)};
+var esc=function(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})};
+var fd=function(d){return d?new Date(d+'T00:00:00').toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'}):'-'};
+var inr=function(n){return '₹'+Number(n||0).toLocaleString('en-IN')};
+var lines=function(t){return String(t||'').split('\n').map(function(s){return s.trim()}).filter(Boolean)};
+var left=function(t){return Math.max(0,t.seats-t.booked)};
+var ses=function(){try{return sessionStorage.getItem('glr_admin')==='1'}catch(e){return !!mem.adm}};
+var setses=function(v){try{v?sessionStorage.setItem('glr_admin','1'):sessionStorage.removeItem('glr_admin')}catch(e){mem.adm=v}};
+function save(){sv('glr_trips',trips);sv('glr_enq',enq)}
+var users=ld('glr_users',[]);
+function cu(){try{return sessionStorage.getItem('glr_user')||''}catch(e){return mem.cu||''}}
+function setcu(v){try{v?sessionStorage.setItem('glr_user',v):sessionStorage.removeItem('glr_user')}catch(e){mem.cu=v}}
+function me(){return users.filter(function(u){return u.email===cu()})[0]}
+function tripCard(t){var l=left(t),p=t.seats?Math.round(t.booked/t.seats*100):0;
+return '<article class="card"><div class="cover">'+esc(t.dest)+'</div><div class="cb"><div class="row"><span class="chip">'+esc(t.cat)+'</span><span class="mut">'+esc(t.days)+'</span></div><h3 style="margin:10px 0 2px;font-size:18px">'+esc(t.title)+'</h3><div class="mut">Departs '+fd(t.dep)+'</div><div class="bar"><i style="width:'+p+'%"></i></div><div class="mut">'+(l?l+' of '+t.seats+' seats left':'Sold out')+'</div><div class="row" style="margin-top:12px"><div><span class="mut">From</span><div class="price">'+inr(t.price)+'</div></div><button class="btn sm" data-a="view" data-id="'+t.id+'">View details</button></div></div></article>'}
+function pub(){
+var open=trips.filter(function(t){return t.status!=='Draft'}).sort(function(a,b){return a.dep>b.dep?1:-1});
+$('#app').innerHTML='<div class="hero"><svg class="plane" viewBox="0 0 120 60" aria-hidden="true"><path d="M4 56C36 54 70 40 100 22" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" opacity=".8"/><path d="M96 12l22-6-12 22-6-6-10 4z" fill="#0b3a9e"/></svg><div class="sun"></div><div class="wrap"><div class="kn">ಸಂಚಾರಿ</div><h1>Your dreams come true here</h1><p>Group tours, family holidays and pilgrimages from Bengaluru, with a tour manager who speaks your language.</p><a class="btn alt" href="#tours">See upcoming tours</a> <a class="btn" style="background:#fff;color:#0b3a9e" href="https://wa.me/'+WA+'?text=Hi%20GLR%20Sanchari%2C%20I%20am%20interested%20in%20your%20tours">Chat on WhatsApp</a></div></div>'
++'<section id="tours"><div class="wrap"><h2>Upcoming tours</h2><p class="sub">Seats are limited. Book early to lock the price.</p><div class="grid">'+(open.length?open.map(tripCard).join(''):'<p class="mut">No tours open right now. Check back soon.</p>')+'</div></div></section>'
++'<section id="why"><div class="wrap"><h2>Why travel with GLR</h2><p class="sub">Comfort, safety and convenience on every trip.</p><div class="why"><div><b>Affordable pricing</b><span class="mut">Good stays and transport without the premium.</span></div><div><b>Safe travel</b><span class="mut">Trusted hotels and partners, your privacy protected.</span></div><div><b>Fast booking</b><span class="mut">Send an enquiry and we call you back the same day.</span></div><div><b>24-hour support</b><span class="mut">Real-time updates and help during the trip.</span></div></div></div></section>'
++'<section id="faq"><div class="wrap"><h2>Questions</h2><p class="sub">Not listed here? Call or message us.</p>'
++[['What kinds of packages do you offer?','Domestic and international group tours, treks and customised holidays.'],['How do I book?','Open a tour, send the enquiry form, or call or WhatsApp us. We confirm seats and share payment details.'],['What is included?','Each tour page lists what is included and excluded, such as stay, meals, transport and sightseeing.'],['What is the cancellation policy?','It depends on the tour. Terms are shared with your booking confirmation.']].map(function(q){return '<details><summary>'+q[0]+'</summary><p class="mut">'+q[1]+'</p></details>'}).join('')+'</div></section>'
++'<footer id="contact"><div class="wrap"><b style="font-size:18px">GLR Sanchari</b><p>Your dreams comes true here.....</p><p>Phone: <a href="tel:'+PHONE.replace(/ /g,'')+'">'+PHONE+'</a><br>Email: '+EMAIL+'<br>Address: Bengaluru, Karnataka (add your office address)</p><p style="opacity:.75">© GLR Sanchari. Demo site.</p></div></footer>'}
+function viewTrip(id){var t=trips.filter(function(x){return x.id===id})[0];if(!t)return;var l=left(t);
+$('#dlg').innerHTML='<div class="dp"><div class="row"><span class="chip">'+esc(t.cat)+'</span><button class="btn ghost sm" data-a="close">Close</button></div><h2 style="margin-top:10px">'+esc(t.title)+'</h2>'
++'<div class="facts"><div><span>Departure</span>'+fd(t.dep)+'</div><div><span>Return</span>'+fd(t.ret)+'</div><div><span>Duration</span>'+esc(t.days)+'</div><div><span>Seats left</span>'+l+' of '+t.seats+'</div></div><div class="mut">Pickup: '+esc(t.pickup)+'</div><div class="price" style="margin:6px 0 10px">'+inr(t.price)+' <span class="mut" style="font-weight:400">per person</span></div>'
++'<h3>Itinerary</h3><ol class="t">'+lines(t.itin).map(function(x,i){return '<li><b>Day '+(i+1)+':</b> '+esc(x)+'</li>'}).join('')+'</ol>'
++'<div class="two"><div><h3>Included</h3><ul class="t">'+lines(t.inc).map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul></div><div><h3>Not included</h3><ul class="t">'+lines(t.exc).map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul></div></div>'
++(l&&!me()?'<h3>Book your seats</h3><p>Please register with your email first. You can then book seats and see your booking updates.</p><a class="btn" href="#account" data-a="close">Register or sign in</a>':l?'<h3>Book your seats</h3><form id="enqf" data-id="'+t.id+'"><div class="two"><div><label for="en">Name</label><input id="en" name="name" required value="'+esc(me().name)+'"></div><div><label for="ep">Phone</label><input id="ep" name="phone" type="tel" required value="'+esc(me().phone)+'"></div></div><label for="es">Number of seats</label><input id="es" name="seats" type="number" min="1" max="'+l+'" value="1" required><label for="em">Message (optional)</label><textarea id="em" name="msg"></textarea><p><button class="btn" type="submit">Send enquiry</button></p></form>':'<p class="mut"><b>This tour is sold out.</b> Message us to join the waiting list.</p>')+'</div>';
+$('#dlg').showModal()}
+function loginView(){$('#app').innerHTML='<div class="wrap"><form class="login" id="loginf"><h2>Admin login</h2><p class="mut">Demo login: '+AUSER+' / '+APASS+'</p><label for="lu">Email</label><input id="lu" name="u" type="email" required autocomplete="username"><label for="lp">Password</label><input id="lp" name="p" type="password" required autocomplete="current-password"><p id="lerr" class="mut" role="alert"></p><button class="btn" type="submit">Log in</button> <a class="btn ghost" href="#">Back to site</a></form></div>'}
+function admin(){if(!ses())return loginView();
+var rev=0,nw=0,sl=0;enq.forEach(function(e){if(e.status==='New')nw++;if(e.status==='Confirmed'){var t=trips.filter(function(x){return x.id===e.tripId})[0];rev+=(t?t.price:0)*e.seats}});trips.forEach(function(t){sl+=left(t)});
+var body=tab==='trips'?'<div class="row" style="margin-bottom:10px"><h3 style="margin:0">Trips</h3><button class="btn sm alt" data-a="new">+ Add trip</button></div><div class="tw"><table><tr><th>Trip</th><th>Departure</th><th>Price</th><th>Seats</th><th>Status</th><th></th></tr>'+trips.map(function(t){return '<tr><td><b>'+esc(t.title)+'</b><br><span class="mut">'+esc(t.dest)+' · '+esc(t.cat)+'</span></td><td>'+fd(t.dep)+'</td><td>'+inr(t.price)+'</td><td>'+t.booked+' / '+t.seats+' booked</td><td>'+esc(t.status)+'</td><td style="white-space:nowrap"><button class="btn ghost sm" data-a="edit" data-id="'+t.id+'">Edit</button> <button class="btn ghost sm" data-a="del" data-id="'+t.id+'">Delete</button></td></tr>'}).join('')+'</table></div>'
+:'<h3>Enquiries and bookings</h3><div class="tw"><table><tr><th>Customer</th><th>Trip</th><th>Seats</th><th>Received</th><th>Status</th></tr>'+(enq.length?enq.map(function(e){return '<tr><td><b>'+esc(e.name)+'</b><br><a href="tel:'+esc(e.phone)+'">'+esc(e.phone)+'</a><br>'+esc(e.email)+'<br><span class="mut">'+esc(e.msg)+'</span></td><td>'+esc(e.tripTitle)+'</td><td>'+e.seats+'</td><td>'+esc(e.at)+'</td><td><select data-st="'+e.id+'" aria-label="Status">'+['New','Contacted','Confirmed','Cancelled'].map(function(s){return '<option'+(s===e.status?' selected':'')+'>'+s+'</option>'}).join('')+'</select></td></tr>'}).join(''):'<tr><td colspan="5" class="mut">No enquiries yet. Send one from a tour page to test.</td></tr>')+'</table></div>';
+$('#app').innerHTML='<div class="wrap admin"><div class="row"><h2 style="margin:0">Admin dashboard</h2><span><a class="btn ghost sm" href="#">View site</a> <button class="btn ghost sm" data-a="out">Log out</button></span></div><div class="stats"><div><b>'+trips.length+'</b>Trips</div><div><b>'+sl+'</b>Seats left</div><div><b>'+nw+'</b>New enquiries</div><div><b>'+inr(rev)+'</b>Confirmed revenue</div></div><div class="tabs"><button class="btn sm'+(tab==='trips'?'':' ghost')+'" data-a="tab" data-id="trips">Trips</button><button class="btn sm'+(tab==='enq'?'':' ghost')+'" data-a="tab" data-id="enq">Enquiries</button></div>'+body+'<p class="mut">Demo data is saved in this browser only. A live site needs a real database and secure login.</p></div>'}
+function f(n,l,v,type,extra){return '<div><label for="f_'+n+'">'+l+'</label><input id="f_'+n+'" name="'+n+'" type="'+(type||'text')+'" value="'+esc(v)+'" '+(extra||'required')+'></div>'}
+function ta(n,l,v){return '<label for="f_'+n+'">'+l+'</label><textarea id="f_'+n+'" name="'+n+'">'+esc(v)+'</textarea>'}
+function tripForm(id){var t=trips.filter(function(x){return x.id===id})[0]||{title:'',dest:'',cat:'Domestic',days:'',dep:'',ret:'',price:'',seats:'',booked:0,pickup:'',itin:'',inc:'',exc:'',status:'Open'};
+$('#dlg').innerHTML='<div class="dp"><div class="row"><h2 style="margin:0">'+(id?'Edit trip':'Add trip')+'</h2><button class="btn ghost sm" data-a="close">Close</button></div><form id="tripf" data-id="'+(id||'')+'"><div class="two">'+f('title','Trip title',t.title)+f('dest','Destination',t.dest)+'<div><label for="f_cat">Category</label><select id="f_cat" name="cat">'+['Domestic','International','Trek'].map(function(c){return '<option'+(c===t.cat?' selected':'')+'>'+c+'</option>'}).join('')+'</select></div>'+f('days','Duration (e.g. 3 Days / 2 Nights)',t.days)+f('dep','Departure date',t.dep,'date')+f('ret','Return date',t.ret,'date')+f('price','Price per person (₹)',t.price,'number','required min="0"')+f('seats','Total seats',t.seats,'number','required min="1"')+f('booked','Seats already booked',t.booked,'number','required min="0"')+'<div><label for="f_status">Status</label><select id="f_status" name="status">'+['Open','Draft'].map(function(c){return '<option'+(c===t.status?' selected':'')+'>'+c+'</option>'}).join('')+'</select></div></div>'+f('pickup','Pickup point',t.pickup)+ta('itin','Itinerary (one line per day)',t.itin)+ta('inc','Included (one per line)',t.inc)+ta('exc','Not included (one per line)',t.exc)+'<p><button class="btn" type="submit">Save trip</button></p></form></div>';$('#dlg').showModal()}
+document.addEventListener('click',function(e){var b=e.target.closest('[data-a]');if(!b)return;var a=b.dataset.a,id=b.dataset.id;
+if(a==='view')viewTrip(id);else if(a==='close')$('#dlg').close();else if(a==='out'){setses(false);route()}else if(a==='tab'){tab=id;admin()}else if(a==='uout'){setcu('');try{history.replaceState(null,'',location.pathname+location.search)}catch(x){}route('')}else if(a==='new')tripForm();else if(a==='edit')tripForm(id);
+else if(a==='del'&&confirm('Delete this trip?')){trips=trips.filter(function(t){return t.id!==id});save();admin()}});
+document.addEventListener('submit',function(e){e.preventDefault();var fm=e.target,d=Object.fromEntries(new FormData(fm).entries());
+if(fm.id==='regf'){var em=d.email.trim().toLowerCase();if(users.some(function(x){return x.email===em})){$('#rerr').textContent='This email is already registered. Sign in below.';return}users.push({name:d.name,email:em,phone:d.phone,pass:d.pass});sv('glr_users',users);setcu(em);route()}else if(fm.id==='sinf'){var em2=d.email.trim().toLowerCase(),uu=users.filter(function(x){return x.email===em2&&x.pass===d.pass})[0];if(uu){setcu(em2);route()}else $('#serr').textContent='Email or password is incorrect.'}else if(fm.id==='loginf'){if(d.u===AUSER&&d.p===APASS){setses(true);admin()}else $('#lerr').textContent='Email or password is incorrect.'}
+else if(fm.id==='tripf'){var o={title:d.title,dest:d.dest,cat:d.cat,days:d.days,dep:d.dep,ret:d.ret,price:+d.price,seats:+d.seats,booked:+d.booked,pickup:d.pickup,itin:d.itin,inc:d.inc,exc:d.exc,status:d.status},id=fm.dataset.id;
+if(id){trips=trips.map(function(t){return t.id===id?Object.assign({},t,o):t})}else{o.id='t'+Date.now();trips.push(o)}save();$('#dlg').close();admin()}
+else if(fm.id==='enqf'){var t=trips.filter(function(x){return x.id===fm.dataset.id})[0];if(+d.seats>left(t)){alert('Only '+left(t)+' seats left.');return}
+enq.unshift({id:'e'+Date.now(),email:cu(),tripId:t.id,tripTitle:t.title,name:d.name,phone:d.phone,seats:+d.seats,msg:d.msg,status:'New',at:new Date().toLocaleString('en-IN',{day:'numeric',month:'short',hour:'numeric',minute:'2-digit'})});save();
+fm.outerHTML='<p class="ok">Thank you, '+esc(d.name)+'. We received your enquiry for '+esc(d.seats)+' seat(s) and will call you shortly. Track it under <a href="#account" data-a="close">My trips</a>.</p>'}});
+document.addEventListener('change',function(e){var id=e.target.dataset.st;if(!id)return;var q=enq.filter(function(x){return x.id===id})[0],old=q.status,ns=e.target.value,t=trips.filter(function(x){return x.id===q.tripId})[0];
+if(t){if(ns==='Confirmed'&&old!=='Confirmed')t.booked+=q.seats;if(old==='Confirmed'&&ns!=='Confirmed')t.booked=Math.max(0,t.booked-q.seats)}q.status=ns;save();admin()});
+function account(){var u=me();
+if(!u){$('#app').innerHTML='<div class="wrap"><div class="login" style="max-width:420px"><h2>Create your account</h2><p class="mut">Register with your email to book tours and see your booking updates.</p><form id="regf"><label for="rn">Name</label><input id="rn" name="name" required><label for="rm">Email</label><input id="rm" name="email" type="email" required autocomplete="email"><label for="rph">Phone</label><input id="rph" name="phone" type="tel" required><label for="rpw">Password (min 6 characters)</label><input id="rpw" name="pass" type="password" minlength="6" required autocomplete="new-password"><p id="rerr" class="mut" role="alert"></p><button class="btn" type="submit">Register</button></form><hr style="border:0;border-top:1px solid var(--line);margin:20px 0"><h3>Already registered?</h3><form id="sinf"><label for="si">Email</label><input id="si" name="email" type="email" required><label for="sp">Password</label><input id="sp" name="pass" type="password" required><p id="serr" class="mut" role="alert"></p><button class="btn ghost" type="submit">Sign in</button></form></div></div>';return}
+var mine=enq.filter(function(x){return x.email===u.email});
+var msg={New:'We received your enquiry and will call you soon.',Contacted:'Our team has contacted you. Please check your phone.',Confirmed:'Your seats are confirmed. See you on the trip!',Cancelled:'This booking was cancelled.'};
+$('#app').innerHTML='<div class="wrap admin"><div class="row"><h2 style="margin:0">Hi, '+esc(u.name)+'</h2><button class="btn ghost sm" data-a="uout">Sign out</button></div><p class="mut">'+esc(u.email)+'</p><h3>My bookings and updates</h3>'+(mine.length?mine.map(function(x){var t=trips.filter(function(y){return y.id===x.tripId})[0];return '<div class="card" style="padding:16px;margin-bottom:12px"><div class="row"><b>'+esc(x.tripTitle)+'</b><span class="chip">'+esc(x.status)+'</span></div><div class="mut">'+x.seats+' seat(s), sent '+esc(x.at)+(t?', departs '+fd(t.dep):'')+'</div><p style="margin:8px 0 0">'+msg[x.status]+'</p></div>'}).join(''):'<p class="mut">No bookings yet. <a href="#tours">Browse upcoming tours</a>.</p>')+'<h3>Tour updates</h3>'+trips.filter(function(t){return t.status!=='Draft'}).map(function(t){return '<div class="mut">'+esc(t.title)+' departs '+fd(t.dep)+', '+left(t)+' seats left</div>'}).join('')+'</div>'}
+var H='';function route(h){H=typeof h==='string'?h:location.hash;$('#acc').textContent=me()?'My trips':'Sign in';if(H==='#admin')admin();else if(H==='#account')account();else{pub();if(H.length>1){var el=document.getElementById(H.slice(1));if(el)el.scrollIntoView()}else window.scrollTo(0,0)}}
+document.addEventListener('click',function(e){var a=e.target.closest('a[href^="#"]');if(!a)return;var h=a.getAttribute('href');e.preventDefault();try{history.replaceState(null,'',h==='#'?location.pathname+location.search:h)}catch(x){}route(h==='#'?'':h)});
+window.addEventListener('hashchange',route);route();
+</script>
+</body>
+</html>
